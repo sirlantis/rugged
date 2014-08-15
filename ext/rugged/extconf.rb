@@ -1,5 +1,7 @@
 require 'mkmf'
 
+puts "EXTCONF"
+
 RbConfig::MAKEFILE_CONFIG['CC'] = ENV['CC'] if ENV['CC']
 
 $CFLAGS << " #{ENV["CFLAGS"]}"
